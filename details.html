@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="pokemon-details.js" defer></script>
+        <title>Pokemon Details</title>
+    </head>
+    <body>
+
+        <main class="details-main main">
+
+            <header class="header">
+
+                <div class="header-wrapper">
+                    <div class="header-wrap">
+                        <a href="index.html" class="back-btn-wrap">
+                            <img src="Assets/back.png" 
+                            id="back-btn"
+                            alt="Back to home" 
+                            class="back-btn"/>
+                        </a>
+                        <div class="name-wrap">
+                            <h1 class="name"></h1>
+                        </div>
+                    </div>
+                    <div class="pokemon-id-wrap">
+                        <p class="body2-fonts"></p>
+                    </div> 
+                </div>
+
+            </header>
+
+            <div class="featured-img">
+                <a href="#" class="arrow left-arrow" id="leftArrow">
+                    <img src="Assets/arrow-left.png" alt="back" />
+                </a>
+                <div class="details-image-wrapper">
+                    <img src="" alt="" class="details-img"/>
+                </div>
+                <a href="#" class="arrow right-arrow" id="rightArrow">
+                    <img src="Assets/arrow-right.png" alt="forward" />
+                </a>
+            </div>
+
+            <div class="details-card-details-wrapper">
+                <div class="power-wrapper"></div>
+
+                <p class="body2-fonts about-text">About</p>
+
+                <div class="pokemon-details-wrapper">
+                    <div class="pokemon-details-wrap">
+                        <div class="pokemon-details">
+                            <img src="Assets/weight.png" alt="weight" />
+                            <p class="body3-fonts weight"></p>
+                        </div>
+                        <p class="caption-fonts">Weight</p>
+                    </div>
+                    <div class="pokemon-details-wrap">
+                        <div class="pokemon-details">
+                            <span class="height-icon">&#x2195;</span>
+                            <p class="body3-fonts height"></p>
+                        </div>
+                        <p class="caption-fonts">Height</p>
+                    </div>
+                    <div class="pokemon-details-wrap">
+                        <div class="pokemon-details move"></div>
+                        <p class="caption-fonts">Moves</p>
+                    </div>
+                </div>
+
+                <p class="body3-fonts pokemon-description"></p>
+
+                <p class="body2-fonts about-text">Base Stats</p>
+                <div class="stats-wrapper"></div>
+            </div>
+
+        </main>
+    </body>
+</html>
