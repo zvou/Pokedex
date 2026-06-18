@@ -73,9 +73,9 @@ function handleSearch() {
             return pokemonID.startsWith(searchTerm);
         });
     } else if (nameFilter.checked) {
-        filteredPokemon = allPokemon.filter((pokemon) => {
-            return pokemon.name.toLowerCase().startsWith(searchTerm);
-        });
+        filteredPokemon = allPokemon
+            .filter((pokemon) => pokemon.name.toLowerCase().startsWith(searchTerm))
+            .sort((a, b) => a.name.localeCompare(b.name));
     } else {
         filteredPokemon = allPokemon;
     }
